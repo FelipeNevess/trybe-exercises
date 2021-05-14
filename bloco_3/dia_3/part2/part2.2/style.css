@@ -1,0 +1,49 @@
+.prima:hover{
+    padding: 1px 1px;
+    background-color: darkred;
+}
+.prima{
+    color: blue;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.secun{
+    color: red;
+    font-size: 40px;
+    font-family: cursive;
+}
+.secun:hover{
+    padding: 1px 1px;
+    background-color:rgb(139, 119, 112);
+}
+
+.comple{
+    color: chartreuse;
+    font-size: 30px;
+    font-family: fantasy;
+}
+.comple:hover{
+    padding: 1px 1px;
+    background-color:deeppink
+}
+
+.escu{
+    color: darkblue;
+    font-size: 20px;
+    font-family: monospace;
+}
+.escu:hover{
+    padding: 1px 1px;
+    background-color:dimgrey
+}
+
+.clara{
+    color: darkorange;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+.clara:hover{
+    padding: 1px 1px;
+    background-color:green
+}
