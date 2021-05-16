@@ -1,35 +1,27 @@
-.super-mario{
-    width: 200px;
-    position:absolute;
-    z-index: 1;
-}
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+  }
 
-.goomba{
-    width: 90px;
-    position: absolute;
-    z-index: 2;
-    left: 200px;
-    top: 300px;
-}
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
 
-.word{
-    position: absolute;
-    z-index: 5;
-    left: 420px;
-    top: 80px;
-}
+  .padding {
+  /* insira aqui um padding de 20px na classe abaixo para aplicá-lo aos itens B, C e D */
+        padding: 20px;
+  }
 
-.baloon{
-    width: 200px;
-    position: absolute;
-    z-index: 3;
-    left: 404px;
-    top: 50px;
-}
+  .margin {
+  /* insira aqui uma margem de 30px na classe abaixo para aplicá-la aos itens C e D */
+        margin: 30px;
+  }
 
-.bowser{
-    width: 200px;
-    position: absolute;
-    z-index: 4;
-    left: 600px;
-}
+  .border {
+  /* insira aqui uma borda com valor '5px solid black' para aplicá-la ao item D */
+        border: 5px solid black ;
+  }

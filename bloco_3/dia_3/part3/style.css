@@ -7,6 +7,6 @@ h1:hover{
 li:hover{
     background-color: aquamarine;
 }
-.ul{
+ol, ul{
     list-style: none;
 }
