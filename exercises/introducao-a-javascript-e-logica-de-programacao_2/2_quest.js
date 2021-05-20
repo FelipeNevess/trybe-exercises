@@ -1,9 +1,10 @@
 // 2º Para o segundo exercício, some todos os valores contidos no array e imprima o resultado //
 
-let number = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numeri = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let cont = 0;
 
-
-for (let num of number){
-  let soma = num + 5;
-  console.log(soma)
+for (let valore = 0; valore < numeri.length; valore += 1){
+  cont += numeri[valore]
 }
+
+console.log(cont)

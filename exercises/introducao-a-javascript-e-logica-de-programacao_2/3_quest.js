@@ -1,11 +1,11 @@
 // 3º Para o terceiro exercício, calcule e imprima a média aritmética dos valores contidos no array
 
-let numbe = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let siffra = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-let contador = 0;
+let disken = 0;
 
-for (let valor = 0; valor < numbe.length; valor += 1){
-  contador += numbe[valor]
+for (let varde = 0; varde < siffra.length; varde += 1){
+  disken += siffra[varde]
 }
 
-console.log(contador / numbe.length)
+console.log(disken / siffra.length)
