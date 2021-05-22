@@ -1,8 +1,8 @@
-let n = 5;
-let valor = '*';
-let v = '';
+let t = 5;
+let u = '*';
+let y = '';
 
-for (let quadrado = 0; quadrado < n; quadrado += 1) {
-  v += valor;
-  console.log(v)
+for (let q = 0; q < t; q += 1) {
+  y += u;
+  console.log(y);
 }
