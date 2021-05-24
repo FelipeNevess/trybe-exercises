@@ -15,5 +15,5 @@ let info_2 = {
 }
 
 for (let n in info){
-  console.log([info[n] + " e " + info_2[n]]);
+  console.log(info[n] + " e " + info_2[n]);
 }
