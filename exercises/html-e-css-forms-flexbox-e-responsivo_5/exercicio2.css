@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: darkcyan;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243, 191, 78);
+}
+
+#titulo {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 700;
+  margin: 10px 10px
+}
+
+.nav ul {
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline;
+  list-style: none;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(204, 190, 168);
+  padding: 10px;
+  font-weight: 600;
+}
+
+.aside-one h2 , .aside-two h2 , .main-content h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.aside-one ul , .aside-two ul {
+  font-size: 18px;
+}
+
+.main-content p {
+  font-size: 27px;
+  margin: 50px 10px;
+  text-align: justify;
+}
+
+.rodape {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  #titulo {
+    font-size: 40px;
+  }
+
+  .nav ul li {
+    font-size: 20px;
+  }
+
+  .aside-one h2 , .aside-two h2{
+    font-size: 60px;
+  }
+
+  .aside-one ul {
+    font-size: 25px;
+  }
+
+  .aside-two ul li {
+    font-size: 25px;
+  }
+}
