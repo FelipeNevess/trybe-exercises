@@ -1,10 +1,10 @@
-function testingScope(escopo) {
+const testingScope = escopo => {
   if (escopo === true) {
     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
-    ifScope = ifScope + ' ótimo, fui utilizada no escopo !';
+    ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
     console.log(ifScope);
   } else {
-    let elseScope = 'Não devo ser utilizada fora meu escopo (else)';
+    let elseScope = `Não devo ser utilizada fora meu escopo (else)`;
     console.log(elseScope);
   }
 }
@@ -27,6 +27,7 @@ const mudarOrden = () => {
 const a = mudarOrden();
 console.log(`A ordem ficou ${a}`);
 
+//
 const fatorial = number => {
   let resultador = 1;
 
@@ -39,6 +40,17 @@ const fatorial = number => {
 
 console.log(fatorial(5))
 
-// RECURSIVA
-const factorial = number => number > 1 ? number * factorial(number - 1) : 1
-console.log(factorial(5))
+//
+
+const TamanhoFrase = frase => {
+  const palavra = frase.split(" ");
+  let maior = palavra[0];
+  for (let i = 0; i < palavra.length; i += 1) {
+    if (palavra[i].length > maior.length) {
+      maior = palavra[i];
+    }
+  }
+  console.log(maior);
+}
+
+TamanhoFrase('Antônio foi no banheiro e não sabemos o que aconteceu');
