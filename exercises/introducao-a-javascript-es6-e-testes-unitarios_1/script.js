@@ -26,3 +26,19 @@ const mudarOrden = () => {
 
 const a = mudarOrden();
 console.log(`A ordem ficou ${a}`);
+
+const fatorial = number => {
+  let resultador = 1;
+
+  for (let i = 2; i <= number; i += 1) {
+    resultador *= i;
+  }
+
+  return resultador;
+}
+
+console.log(fatorial(5))
+
+// RECURSIVA
+const factorial = number => number > 1 ? number * factorial(number - 1) : 1
+console.log(factorial(5))
