@@ -22,5 +22,15 @@ const c2 = (lesson, key, value) => {
   return lesson[key] = value;
 }
 
-console.log(lesson2);
+c2(lesson2, 'turno', 'manhã');
 console.log(c2(lesson2, 'turno', 'manhã'));
+console.log('______________________')
+
+const c3 = lesson => {
+  for (let i in lesson) {
+    console.log(`O valor de ${i}: ${lesson[i]}`)
+  }
+}
+
+c3(lesson3);
+console.log('_______________________')
