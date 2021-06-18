@@ -52,3 +52,6 @@ const c5 = lesson => {
 
 c5(lesson2);
 console.log('__________________________')
+
+const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+console.log(allLessons);
