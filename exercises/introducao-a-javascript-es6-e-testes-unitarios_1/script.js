@@ -29,12 +29,12 @@ console.log(`A ordem ficou ${a}`);
 
 //
 const fatorial = number => {
-  let resultador = 1;
+  let resultado = 1;
   for (let i = 2; i <= number; i += 1) {
-    resultador *= i;
+    resultado *= i;
   }
 
-  return resultador;
+  return resultado;
 }
 
 console.log(fatorial(5))
@@ -52,17 +52,6 @@ const TamanhoFrase = frase => {
   console.log(maior);
 }
 
-/* TamanhoFrase('Antônio foi no banheiro e não sabemos o que aconteceu');
-const button = document.getElementById('click');
-let clickCount = 0;
-function clicar() {
-  clickCount += 1;
-  button.innerHTML = clickCount;
-}
-
-button.addEventListener('click', clicar); */
-
-TamanhoFrase('Antônio foi no banheiro e não sabemos o que aconteceu');
 const button = document.getElementById('click');
 let clickCount = 0;
 button.addEventListener('click', () => {
@@ -70,3 +59,37 @@ button.addEventListener('click', () => {
   button.innerHTML = clickCount;
 })
 
+/* const stringSub = str => {
+let a = 'Tryber x aqui!';
+return a.replace('x', str);
+}
+ */
+
+const array = ["Android", "iOS", "Architecture", "Teach", "Run"]
+
+function buildSkillsPhrase (paramOne) {
+  const fun1 = paramInner => (
+    `Tryber ${paramInner} aqui!
+
+    Tudo bem?`
+  )
+
+  let result = `${fun1(paramOne)}
+
+  Minhas cinco principais habilidades são:`
+
+  array.forEach((skill, index) =>
+  result = `${result}
+
+  - ${skill}`)
+
+  result = `
+  {result}
+
+  #goTrybe
+  `
+
+  return result
+}
+
+console.log(buildSkillsPhrase("Lucas"))
