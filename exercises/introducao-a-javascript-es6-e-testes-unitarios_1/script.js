@@ -30,7 +30,6 @@ console.log(`A ordem ficou ${a}`);
 //
 const fatorial = number => {
   let resultador = 1;
-
   for (let i = 2; i <= number; i += 1) {
     resultador *= i;
   }
@@ -53,4 +52,21 @@ const TamanhoFrase = frase => {
   console.log(maior);
 }
 
+/* TamanhoFrase('Antônio foi no banheiro e não sabemos o que aconteceu');
+const button = document.getElementById('click');
+let clickCount = 0;
+function clicar() {
+  clickCount += 1;
+  button.innerHTML = clickCount;
+}
+
+button.addEventListener('click', clicar); */
+
 TamanhoFrase('Antônio foi no banheiro e não sabemos o que aconteceu');
+const button = document.getElementById('click');
+let clickCount = 0;
+button.addEventListener('click', () => {
+  clickCount += 1;
+  button.innerHTML = clickCount;
+})
+
