@@ -43,3 +43,12 @@ const c4 = lesson => {
 
 c4(lesson2)
 console.log('________________________')
+
+const c5 = lesson => {
+  for (let i in lesson) {
+    console.log(lesson[i])
+  }
+}
+
+c5(lesson2);
+console.log('__________________________')
