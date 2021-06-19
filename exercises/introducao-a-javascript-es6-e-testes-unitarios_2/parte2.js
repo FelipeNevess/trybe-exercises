@@ -68,3 +68,11 @@ const estudantes = (obj) => {
 }
 
 console.log(estudantes(allLessons));
+console.log('___________________________')
+
+const getValueByNumber = (obt1, num) => {
+  let a = Object.values(obt1);
+  console.log(a[num]);
+}
+
+getValueByNumber(lesson1, 0)
