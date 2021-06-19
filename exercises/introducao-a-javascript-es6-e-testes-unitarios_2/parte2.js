@@ -96,4 +96,21 @@ const verifyPair = (obj2, keyy, val) => {
   }
 }
 
-console.log(verifyPair(lesson2, 'materia', 'História'));
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+console.log('_____________________________')
+
+/// QUESTOẼS BÔNUS
+
+const contEstudant = objec => {
+  let cont = 0;
+  const a = Object.keys(objec);
+  
+  for (let i in a) {
+    if (objec[a[i]].materia === 'Matemática') {
+      cont += objec[a[i]].numeroEstudantes;
+    }
+  }
+  console.log(`A quantidade de alunos que assitiram a aula de Matemática foram: ${cont}`);
+}
+
+contEstudant(allLessons)
