@@ -114,3 +114,25 @@ const contEstudant = objec => {
 }
 
 contEstudant(allLessons)
+console.log('______________________________');
+
+const relatorio = (obj, prof) => {
+  const a = Object.keys(obj);
+  let b = {};
+  let cont = 0;
+  let aulas = [];
+
+  for (let i in a) {
+    if (obj[a[i]].professor === prof) {
+      b.professor = obj[a[i]].professor;
+      aulas.push(obj[a[i]].materia);
+      cont += obj[a[i]].numeroEstudantes;
+    }
+  }
+
+  b.aulas = aulas;
+  b.estudantes = cont;
+  console.log(b);
+}
+
+relatorio(allLessons, 'Maria Clara');
