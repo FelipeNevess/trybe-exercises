@@ -71,8 +71,29 @@ console.log(estudantes(allLessons));
 console.log('___________________________')
 
 const getValueByNumber = (obt1, num) => {
-  let a = Object.values(obt1);
+  const a = Object.values(obt1);
   console.log(a[num]);
 }
 
 getValueByNumber(lesson1, 0)
+console.log('___________________________')
+
+const verifyPair = (obj2, keyy, val) => {
+  const a = Object.keys(obj2);
+  const b = Object.values(obj2);
+  let cont = 0;
+
+  for (let i = 0; i < a.length; i += 1) {
+    if (a[i] === keyy && b[i] === val) {
+      cont = 1;
+    }
+  }
+
+  if (cont === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(verifyPair(lesson2, 'materia', 'História'));
