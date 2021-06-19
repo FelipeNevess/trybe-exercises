@@ -55,3 +55,16 @@ console.log('__________________________')
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 console.log(allLessons);
+console.log('__________________________')
+
+const estudantes = (obj) => {
+  let cont = 0;
+  let a = Object.keys(obj);
+
+  for (let i in a) {
+    cont += obj[a[i]].numeroEstudantes;
+  }
+  return cont;
+}
+
+console.log(estudantes(allLessons));
