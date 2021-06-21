@@ -135,16 +135,11 @@
 
   #header {
     background: #ccc;
-    padding: 20px;
+    padding: 20px 0;
+    text-align: center;
     display: inline;
     position: fixed;
     width: 100%;
-  }
-
-  #header {
-    text-align: center;
     margin: 0;
-    width: 100%;
-    padding: 20px 0;
   }
 }
