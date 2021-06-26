@@ -63,16 +63,16 @@ const books = [
   },
 ];
 
-function smallerName() {
-  let nameBook = '';
-  books.forEach((book1) => {
-    nameBook = book1.name;
-  })
+const expectedResult = false;
 
-  books.forEach((book) => {
-    book.name.length < nameBook.length ? nameBook = book.name : '';
+function authorUnique() {
+  return books.every((book0) => {
+    return books.some((book1) => {
+      !book1.author.birthYear === book0.author.birthYear && book1.author.name !== book0.author.name;
+    })
   })
-  return nameBook;
 }
-console.log(smallerName());
-assert.strictEqual(smallerName(), 'Duna');
+
+console.log(authorUnique());
+assert.strictEqual(authorUnique(), expectedResult);
+

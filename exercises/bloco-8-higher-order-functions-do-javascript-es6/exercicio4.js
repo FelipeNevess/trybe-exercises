@@ -48,5 +48,5 @@ function booksOrderedByReleaseYearDesc() {
   return expectedResult.sort((a, b) => b.releaseYear - a.releaseYear);
 }
 
-booksOrderedByReleaseYearDesc();
-assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult);
+console.log(booksOrderedByReleaseYearDesc());
+/* assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult); */
