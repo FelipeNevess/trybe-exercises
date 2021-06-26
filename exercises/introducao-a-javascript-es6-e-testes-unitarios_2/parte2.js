@@ -32,13 +32,11 @@ const c3 = lesson => {
   }
 }
 
-c3(lesson3);
+c3(lesson2);
 console.log('_______________________')
 
 const c4 = lesson => {
-  for (let i in lesson) {
-    console.log(Object.keys(lesson).length)
-  }
+  console.log(Object.keys(lesson).length);
 }
 
 c4(lesson2)
