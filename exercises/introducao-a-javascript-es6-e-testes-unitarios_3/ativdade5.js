@@ -24,4 +24,3 @@ assert.notDeepStrictEqual(Object.values(obj1)[0], Object.values(obj3)[0], Object
 
 assert.notDeepStrictEqual(Object.keys(obj2)[0], Object.keys(obj3)[0], Object.keys(obj2)[1], Object.keys(obj3)[1]);
 assert.notDeepStrictEqual(Object.values(obj2)[0], Object.values(obj3)[0], Object.values(obj2)[1], Object.values(obj3)[1]);
-
