@@ -64,15 +64,10 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
-const expectedResult = [
-  'Frank Herbert',
-  'George R. R. Martin',
-  'Isaac Asimov',
-  'J. R. R. Tolkien',
-];
+const expectedResult = 'O Senhor dos Anéis';
 
-function fantasyOrScienceFictionAuthors() {
-  return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia').map((book) => book.author.name).sort();
+function authorWith3DotsOnName() {
+  return books.find((book) => book.author.name.split('').filter((word) => word.endsWith('.')).length === 3).name;
 }
 
-assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);

@@ -65,14 +65,13 @@ const books = [
 
 // Adicione o código do exercício aqui:
 const expectedResult = [
-  'Frank Herbert',
-  'George R. R. Martin',
-  'Isaac Asimov',
-  'J. R. R. Tolkien',
+  'O Senhor dos Anéis',
+  'Fundação',
+  'O Chamado de Cthulhu',
 ];
 
-function fantasyOrScienceFictionAuthors() {
-  return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia').map((book) => book.author.name).sort();
+function oldBooks() {
+  return books.filter((book) => new Date().getFullYear() - book.releaseYear > 60).map((element) => element.name);
 }
 
-assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
+assert.deepStrictEqual(oldBooks(), expectedResult);
