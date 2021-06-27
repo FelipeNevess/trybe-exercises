@@ -20,4 +20,4 @@ const verificar = (an1, an2, callback) => {
   return callback(an1, an2);
 }
 
-console.log(verificar(rightAnswers,studentAnswers,result));
+verificar(rightAnswers,studentAnswers,result);
