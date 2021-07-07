@@ -11,4 +11,4 @@ const sendMarsTemperature = (callback) => {
   console.log(`Mars temperature is: ${callback} degree Celsius`);
 }
 
-setTimeout(() => sendMarsTemperature(getMarsTemperature()), 2000); // imprime "Mars temperature is: 20 degree Celsius", por exemplo
+setTimeout(() => sendMarsTemperature(getMarsTemperature()), messageDelay()); // imprime "Mars temperature is: 20 degree Celsius", por exemplo
