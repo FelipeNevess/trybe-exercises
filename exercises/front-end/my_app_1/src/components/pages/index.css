@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.sub_container {
+  display: flex;
+  height: 170px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #f4a261;
+  border: solid 1px red;
+}
+
+.sub_container:hover {
+  transition: 2s;
+  background-color: #faa307;
+}
+
+.c1 {
+  width: 200px;
+}
+
+p {
+  font-family: monospace;
+}
+
+.img {
+  width: 150px;
+}
